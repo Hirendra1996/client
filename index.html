@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VELVORA — Everything You Need. One Better Shopping Experience.</title>
+    <meta name="description" content="Velvora - Premium e-commerce. Electronics, Fashion, Beauty, Home & more." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=DM+Sans:opsz,wght@9..40,500;9..40,700&display=swap" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: { sans: ['Inter', 'DM Sans', 'system-ui', 'sans-serif'] },
+            colors: {
+              brand: {
+                50: '#EEF2FF',
+                100: '#E0E7FF',
+                500: '#4F46E5',
+                600: '#4338CA',
+                700: '#3730A3',
+                900: '#1E1B4B'
+              },
+              ink: '#0F172A',
+              sale: '#E11D48'
+            },
+            boxShadow: {
+              card: '0 1px 3px rgba(15,23,42,.08), 0 4px 16px rgba(15,23,42,.06)',
+              lift: '0 12px 32px rgba(67,56,202,.16)',
+              pop: '0 8px 30px rgba(0,0,0,.12)'
+            }
+          }
+        }
+      }
+    </script>
+  </head>
+  <body class="antialiased">
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
